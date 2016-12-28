@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>School Donations Dashboard</title>
+   <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+   <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+   <link rel="stylesheet" href="./static/lib/css/dc.css">
+   <link rel="stylesheet" href="./static/css/custom.css">
+   <link rel="stylesheet" href="./static/css/introjs.css" />
+ </head>
+<body class="application">
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <div class="container-fluid">
+       <div class="navbar-header">
+           <a class="navbar-brand" href="./">
+               <img class="logo" src="./static/img/donors-choose-logo.png" alt="logo">
+               School Donations Dashboard</a>
+       </div>
+   </div>
+</div>
+
+<div class="explanation">
+    <div class="description">Description of this Project: </div>
+    <div id="title1">Support a classroom. Build a future.</div>
+    <div id="title2">DonorsChoose.org is a US based nonprofit organization that allows individuals to donate money directly
+    to public school classroom projects. Public school teachers post classroom project requests on the platform, and individuals have the
+    option to donate money directly to fund these projects. The classroom projects range from pencils and books to computers and other
+    expensive equipments for classrooms. In more than 10 years of existence, this platform helped teachers in all US states to post more
+    than 7700,000 classroom project requests and raise more than $280,000,000. DonorsChoose.org has made the platform data open and available
+    for making discoveries and building applications.</div>
+
+     <button class="intro_button" type="button" autofocus onclick="javascript:introJs().start();">Start Tour!</button>
+</div>
+
+<div  id="outer" class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-sm-12">
+            <div class="row">
+
+                <!-- Time Chart -->
+                <div class="col-sm-9" data-step="1" data-intro="The description that you want Lorem ipsum dolor sit amet,
+               consectetur adipiscing elit. Maecenas elementum tincidunt dui ut dictum. Donec non est a nisi varius vulputate.
+                Duis interdum faucibus justo sit amet tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Cras pretium dui ac justo commodo, in ultrices lacus tempus." style="font-weight: normal"
+                     data-position="right">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Number of Donations
+                        </div>
+                        <div class="chart-stage">
+                            <div id="time-chart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Time Chart -->
+
+                <!-- Resources -->
+                <div class="col-sm-6" data-step="2" data-intro="The description that you want Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur congue orci enim, et vulputate ante interdum nec. Sed eget vulputate neque, ut aliquam nibh.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Aliquam consectetur, neque a vehicula luctus, massa leo blandit ante, ut accumsan dui leo auctor arcu."
+                     style="font-weight: normal" data-position="right">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Resources Type
+                        </div>
+                        <div class="chart-stage">
+                            <div id="resource-type-row-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Resources -->
+
+
+                <!-- funding Pie -->
+                <div class="col-sm-3" data-step="3" data-intro="The description that you want  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Vestibulum ullamcorper dignissim sem, a vestibulum magna consectetur vel. Etiam a risus. "
+                     style="font-weight: normal" data-position="right">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Funding Status
+                        </div>
+                        <div class="chart-stage">
+                            <div id="funding-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- funding Pie -->
+
+            </div>
+
+
+            <!-- Poverty -->
+            <div class="col-sm-6" data-step="4" data-intro="The description that you want Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras in eleifend mi. Cras rhoncus mollis quam, sit amet auctor dolor.  " style="font-weight: normal"
+                 data-position="right">
+                <div class="chart-wrapper">
+                    <div class="chart-title">
+                        Poverty Level
+                    </div>
+                    <div class="chart-stage">
+                        <div id="poverty-level-row-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Poverty -->
+
+
+            <!-- Grade Level -->
+            <div class="col-sm-3" data-step="5" data-intro="The description that you want Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Donec gravida sapien nec odio commodo, egestas sodales tellus venenatis. Duis sem. "
+                 style="font-weight: normal" data-position="right">
+                <div class="chart-wrapper">
+                    <div class="chart-title">
+                        Grade Level
+                    </div>
+                    <div class="chart-stage">
+                        <div id="grade-level-row-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Grade Level -->
+
+            <!-- Primary Area -->
+            <div class="col-sm-9" data-step="6" data-intro="The description that you want Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nam ornare quam est, in mattis mauris vehicula sit amet. Nunc at. "
+                 style="font-weight: normal" data-position="right">
+                <div class="chart-wrapper">
+                    <div class="chart-title">Primary Focus Area</div>
+                    <div class="chart-stage">
+                        <div id="primary-area-row-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Primary Area -->
+
+        </div>
+        <!-- menu select -->
+        <div class="col-sm-6">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Donation State
+                </div>
+                <div class="chart-stage">
+                    <div id="menu-select"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- menu select -->
+
+        <!-- Metric 1 -->
+        <div class="col-sm-3">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Total Number of Donations
+                </div>
+                <div class="chart-stage">
+                        <div id="number-projects-nd"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Metric 1 -->
+
+        <!-- Metric 2 -->
+        <div class="col-sm-3">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Total Donations in USD
+                </div>
+                <div class="chart-stage">
+                        <div id="total-donations-nd"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Metric 2 -->
+
+
+</div>
+
+<hr>
+<p class="small text-muted"> Data viz &#9829; from Code Institute</a></p>
+
+</div>
+<script src="./static/lib/js/jquery.min.js"></script>
+<script src="./static/lib/js/bootstrap.min.js"></script>
+<script src="./static/lib/js/crossfilter.js"></script>
+<script src="./static/lib/js/d3.js"></script>
+<script src="./static/lib/js/dc.js"></script>
+<script src="./static/lib/js/queue.js"></script>
+<script src="./static/lib/js/keen.min.js"></script>
+<script src='./static/js/graph.js' type='text/javascript'></script>
+<script src="./static/js/intro.js" type="text/javascript"></script>
+</body>
+</html>
